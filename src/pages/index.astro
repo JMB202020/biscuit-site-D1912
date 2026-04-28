@@ -1,319 +1,334 @@
 ---
 import '../styles/site.css';
-const siteId = "D1912";
-const siteName = "Accelerate Driving Tuition";
-const currentPage = "/D1912/";
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Accelerate Driving Tuition | Expert Driving Lessons Glasgow</title>
-  
+  <title>Driving Lessons &amp; Instructors in Glasgow | Accelerate Driving Tuition</title>
+  <meta name="description" content="Expert driving lessons in Glasgow and surrounding areas. DVSA approved instructors, male and female. Established 1998. Call 07397 040400." />
 </head>
 <body>
 
-<!-- Preview banner -->
 <div style="background:white;color:#374151;padding:8px 16px;text-align:center;font-size:13px;position:sticky;top:0;z-index:50;border-bottom:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><span>Preview redesign for <strong style="color:#111827">Accelerate Driving Tuition</strong></span><a href="https://biscuitweb.co.uk/activate?id=D1912&amp;name=Accelerate%20Driving%20Tuition" style="display:inline-flex;align-items:center;padding:4px 14px;background:#111827;color:white;font-weight:700;font-size:11px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
 
-<!-- Nav -->
-<nav class="bg-[#423F33] text-white sticky top-[41px] z-40">
-  <div class="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
-    <a href="/D1912" class="font-display font-bold text-lg" style="color:#E7CE50;">Accelerate Driving Tuition</a>
-    <button id="menu-toggle" class="md:hidden p-2" aria-label="Toggle menu">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+<header class="sticky top-[41px] z-40 bg-[#423F33] shadow-md">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="/D1912" class="flex items-center gap-3">
+      <img src="/D1912/images/logo-l.png" alt="Accelerate Driving Tuition" width="42" height="42" class="rounded" fetchpriority="high" />
+      <div class="hidden sm:block">
+        <span class="text-[#E7CE50] font-bold text-base leading-tight block">Accelerate</span>
+        <span class="text-white text-xs">Driving Tuition</span>
+      </div>
+    </a>
+    <nav class="hidden md:flex items-center gap-1 text-sm font-semibold">
+      <a href="/D1912" class="text-[#E7CE50] px-3 py-2 rounded">Home</a>
+      <a href="/D1912/about-us" class="text-white hover:text-[#E7CE50] px-3 py-2 rounded transition-colors">About Me</a>
+      <a href="/D1912/lessons-cost-glasgow" class="text-white hover:text-[#E7CE50] px-3 py-2 rounded transition-colors">Lessons &amp; Cost</a>
+      <a href="/D1912/glasgow-areas" class="text-white hover:text-[#E7CE50] px-3 py-2 rounded transition-colors">Areas</a>
+      <a href="/D1912/pass-plus-glasgow" class="text-white hover:text-[#E7CE50] px-3 py-2 rounded transition-colors">Pass Plus</a>
+      <a href="/D1912/contact-us" class="bg-[#E7CE50] text-[#423F33] hover:bg-[#B9A540] px-4 py-2 rounded font-bold transition-colors">Contact Me</a>
+    </nav>
+    <button id="menu-btn" class="md:hidden text-white p-2" aria-label="Open menu">
+      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
     </button>
-    <ul class="hidden md:flex gap-6 text-sm font-semibold">
-      <li><a href="/D1912" class="hover:text-[#E7CE50] transition-colors" style="color:#E7CE50;">Home</a></li>
-      <li><a href="/D1912/about-us" class="text-white/80 hover:text-[#E7CE50] transition-colors">About Me</a></li>
-      <li><a href="/D1912/lessons-cost-glasgow" class="text-white/80 hover:text-[#E7CE50] transition-colors">Lessons &amp; Cost</a></li>
-      <li><a href="/D1912/glasgow-areas" class="text-white/80 hover:text-[#E7CE50] transition-colors">Areas</a></li>
-      <li><a href="/D1912/blog" class="text-white/80 hover:text-[#E7CE50] transition-colors">Blog</a></li>
-      <li><a href="/D1912/contact-us" class="text-white/80 hover:text-[#E7CE50] transition-colors">Contact</a></li>
-    </ul>
   </div>
-  <ul id="mobile-menu" class="hidden bg-[#423F33] px-4 pb-4 flex-col gap-1 text-sm font-semibold border-t border-white/10">
-    <li><a href="/D1912" class="block py-2 hover:text-[#E7CE50] transition-colors" style="color:#E7CE50;">Home</a></li>
-    <li><a href="/D1912/about-us" class="block py-2 text-white/80 hover:text-white transition-colors">About Me</a></li>
-    <li><a href="/D1912/lessons-cost-glasgow" class="block py-2 text-white/80 hover:text-white transition-colors">Lessons &amp; Cost</a></li>
-    <li><a href="/D1912/glasgow-areas" class="block py-2 text-white/80 hover:text-white transition-colors">Areas</a></li>
-    <li><a href="/D1912/blog" class="block py-2 text-white/80 hover:text-white transition-colors">Blog</a></li>
-    <li><a href="/D1912/contact-us" class="block py-2 text-white/80 hover:text-white transition-colors">Contact</a></li>
-  </ul>
-</nav>
-<script>
-  const toggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('mobile-menu');
-  toggle?.addEventListener('click', () => { menu?.classList.toggle('hidden'); menu?.classList.toggle('flex'); });
-</script>
+  <div id="mobile-menu" class="hidden md:hidden bg-[#35322A] border-t border-[#E7CE50]/20">
+    <nav class="flex flex-col px-4 py-3 gap-1 text-sm font-semibold">
+      <a href="/D1912" class="text-[#E7CE50] px-3 py-2">Home</a>
+      <a href="/D1912/about-us" class="text-white px-3 py-2">About Me</a>
+      <a href="/D1912/lessons-cost-glasgow" class="text-white px-3 py-2">Lessons &amp; Cost</a>
+      <a href="/D1912/glasgow-areas" class="text-white px-3 py-2">Areas</a>
+      <a href="/D1912/pass-plus-glasgow" class="text-white px-3 py-2">Pass Plus</a>
+      <a href="/D1912/intensive-driving-courses" class="text-white px-3 py-2">Intensive Courses</a>
+      <a href="/D1912/show-me-tell-me" class="text-white px-3 py-2">Show Me / Tell Me</a>
+      <a href="/D1912/driving-instructor-jobs-glasgow" class="text-white px-3 py-2">Instructor Jobs</a>
+      <a href="/D1912/contact-us" class="text-[#E7CE50] px-3 py-2 font-bold">Contact Me</a>
+    </nav>
+  </div>
+</header>
 
 <!-- Hero -->
-<section class="bg-[#423F33] text-white">
-  <div class="max-w-6xl mx-auto px-4 py-20 flex flex-col md:flex-row items-center gap-10">
-    <div class="flex-1">
-      <span class="inline-block bg-[#E7CE50] text-[#453E18] font-bold text-sm px-4 py-1 rounded-full mb-6">📍 Glasgow</span>
-      <h1 class="font-display font-bold text-4xl md:text-5xl text-white mb-5 leading-tight">Expert Driving Lessons in Glasgow</h1>
-      <p class="text-white/85 text-lg mb-8 max-w-xl">Fully approved instructors, competitive prices, excellent pass rates. Serving Glasgow and surrounding areas since 1998.</p>
-      <a href="/D1912/lessons-cost-glasgow" class="inline-block bg-[#E7CE50] text-[#453E18] font-bold px-8 py-3 rounded-lg hover:bg-[#B9A540] transition-colors">See Lessons &amp; Prices</a>
+<section class="bg-[#423F33] py-20 px-4">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <span class="inline-flex items-center gap-2 bg-[#E7CE50]/20 text-[#E7CE50] text-sm font-semibold px-3 py-1 rounded-full mb-5">📍 Glasgow</span>
+      <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-5">Expert Driving Lessons in Glasgow</h1>
+      <p class="text-[#E7CE50]/90 text-lg mb-5">DVSA approved &bull; Male &amp; female instructors &bull; Est. 1998</p>
+      <p class="text-white/80 mb-8">At Accelerate you can be sure to receive the best instructors available. We offer driving lessons, intensive courses, and semi-intensive courses covering Glasgow, Paisley, and all surrounding areas.</p>
+      <div class="flex flex-wrap gap-3">
+        <a href="tel:07397040400" class="bg-[#E7CE50] text-[#423F33] font-bold px-6 py-3 rounded-lg hover:bg-[#B9A540] transition-colors">📞 07397 040400</a>
+        <a href="/D1912/lessons-cost-glasgow" class="border-2 border-[#E7CE50] text-[#E7CE50] font-bold px-6 py-3 rounded-lg hover:bg-[#E7CE50] hover:text-[#423F33] transition-colors">View Prices</a>
+      </div>
     </div>
-    <div class="flex-1 flex justify-center">
-      <img src="/D1912/images/driving-lessons-glasgow1.png" alt="Driving lessons Glasgow" class="rounded-xl shadow-2xl max-w-sm w-full" fetchpriority="high" width="480" height="340" />
+    <div class="relative">
+      <img src="/D1912/images/img-slider3.png" alt="Driving lessons Glasgow" width="422" height="303" class="rounded-xl shadow-2xl w-full object-cover" fetchpriority="high" />
+      <div class="absolute -bottom-4 -left-4 bg-[#E7CE50] text-[#423F33] rounded-lg p-4 shadow-lg hidden md:block">
+        <p class="font-bold text-lg">Est. 1998</p>
+        <p class="text-sm font-semibold">25+ years experience</p>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- Trust strip -->
-<section class="bg-[#E7CE50]">
-  <div class="max-w-6xl mx-auto px-4 py-5 flex flex-wrap justify-center gap-6 text-[#453E18] font-semibold text-sm">
-    <span class="flex items-center gap-2">✅ Established 1998</span>
-    <span class="flex items-center gap-2">✅ DSA Approved Instructors</span>
-    <span class="flex items-center gap-2">✅ Male &amp; Female Instructors</span>
-    <span class="flex items-center gap-2">✅ Dual Controlled Cars</span>
-  </div>
-</section>
-
-<!-- About section -->
-<section class="py-20 bg-[#FEFDF6]">
-  <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-12 items-center">
-    <div class="flex-1 flex justify-center">
-      <img src="/D1912/images/steven-love.png" alt="Steven Love, Accelerate Driving Tuition instructor" class="rounded-xl shadow-lg max-w-xs w-full" loading="lazy" width="300" height="300" />
+<section class="bg-[#FDFBF1] border-b border-[#F8F0CB] py-8">
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+    <div>
+      <p class="text-2xl font-bold text-[#423F33]">25+</p>
+      <p class="text-sm text-[#8B7C30]">Years Experience</p>
     </div>
-    <div class="flex-1">
-      <h2 class="font-display font-bold text-3xl text-[#453E18] mb-5">Welcome to Accelerate Driving Tuition</h2>
-      <p class="text-[#453E18] mb-4">At Accelerate you can be sure to receive the best instructors available. We offer a wide range of driving lessons, intensive courses, semi-intensive courses. Our instructors are all DSA qualified, with both male and female instructors using dual controlled cars.</p>
-      <p class="text-[#453E18] mb-4">I'm Steven Love, founder of Accelerate Driving Tuition. I qualified as a driving instructor in 1996 and started the business in 1998 after gaining experience with a reputable driving school. I believe any good business must work hard, be reliable and honest, and show a degree of professionalism to prosper.</p>
-      <p class="text-[#453E18] mb-6">We will always try to accommodate everyone, whether that be pick up from home, work, college, school or anywhere else within reasonable distance. The driving lessons will always be one to one, and a full hour given.</p>
-      <a href="/D1912/about-us" class="inline-block border-2 border-[#E7CE50] text-[#453E18] font-bold px-6 py-2 rounded-lg hover:bg-[#E7CE50] transition-colors">More About Me</a>
+    <div>
+      <p class="text-2xl font-bold text-[#423F33]">DVSA</p>
+      <p class="text-sm text-[#8B7C30]">Approved Instructors</p>
+    </div>
+    <div>
+      <p class="text-2xl font-bold text-[#423F33]">Male &amp; Female</p>
+      <p class="text-sm text-[#8B7C30]">Instructors Available</p>
+    </div>
+    <div>
+      <p class="text-2xl font-bold text-[#423F33]">1-to-1</p>
+      <p class="text-sm text-[#8B7C30]">Personal Tuition</p>
     </div>
   </div>
 </section>
 
 <!-- Lessons offered -->
-<section class="py-20 bg-white">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="font-display font-bold text-3xl text-[#453E18] text-center mb-12">What I Offer</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="bg-[#FEFDF6] rounded-xl p-6 border border-[#F8F0CB] shadow-sm">
-        <div class="text-3xl mb-3">🚗</div>
-        <h3 class="font-display font-bold text-lg text-[#453E18] mb-2">Standard Lessons</h3>
-        <p class="text-[#453E18]/80 text-sm">One-to-one lessons tailored to your pace. Full hour guaranteed from the moment you sit behind the wheel.</p>
+<section class="py-16 px-4">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-[#423F33] mb-3 text-center">What I Offer</h2>
+    <p class="text-center text-[#8B7C30] mb-12 max-w-2xl mx-auto">A Glasgow driving school offering a high quality service at very competitive prices. Fully qualified instructors working one to one with every pupil.</p>
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white rounded-xl shadow-sm border border-[#F8F0CB] overflow-hidden">
+        <img src="/D1912/images/school-of-motoring.png" alt="Standard driving lessons" width="291" height="220" class="w-full object-cover" loading="lazy" />
+        <div class="p-6">
+          <h3 class="font-bold text-[#423F33] text-xl mb-2">Standard Lessons</h3>
+          <p class="text-[#8B7C30] text-sm mb-4">One-to-one tuition with a fully qualified DVSA instructor. We welcome nervous, young, and older drivers. Full hour guaranteed.</p>
+          <a href="/D1912/lessons-cost-glasgow" class="text-[#B9A540] font-semibold text-sm hover:underline">View prices &rarr;</a>
+        </div>
       </div>
-      <div class="bg-[#FEFDF6] rounded-xl p-6 border border-[#F8F0CB] shadow-sm">
-        <div class="text-3xl mb-3">⚡</div>
-        <h3 class="font-display font-bold text-lg text-[#453E18] mb-2">Intensive Courses</h3>
-        <p class="text-[#453E18]/80 text-sm">Pass quickly with an intensive course. Ideal if you need your licence fast. Please call to enquire.</p>
+      <div class="bg-white rounded-xl shadow-sm border border-[#F8F0CB] overflow-hidden">
+        <img src="/D1912/images/driving-lessons-paisley.png" alt="Intensive driving courses" width="291" height="220" class="w-full object-cover" loading="lazy" />
+        <div class="p-6">
+          <h3 class="font-bold text-[#423F33] text-xl mb-2">Intensive Courses</h3>
+          <p class="text-[#8B7C30] text-sm mb-4">Semi-intensive and full intensive courses available. Ideal if you have a test date booked or need to pass quickly.</p>
+          <a href="/D1912/intensive-driving-courses" class="text-[#B9A540] font-semibold text-sm hover:underline">Learn more &rarr;</a>
+        </div>
       </div>
-      <div class="bg-[#FEFDF6] rounded-xl p-6 border border-[#F8F0CB] shadow-sm">
-        <div class="text-3xl mb-3">📅</div>
-        <h3 class="font-display font-bold text-lg text-[#453E18] mb-2">Semi-Intensive Courses</h3>
-        <p class="text-[#453E18]/80 text-sm">A flexible middle ground. More frequent lessons over a shorter period than a standard course.</p>
-      </div>
-      <div class="bg-[#FEFDF6] rounded-xl p-6 border border-[#F8F0CB] shadow-sm">
-        <div class="text-3xl mb-3">🏆</div>
-        <h3 class="font-display font-bold text-lg text-[#453E18] mb-2">Pass Plus &mdash; £320</h3>
-        <p class="text-[#453E18]/80 text-sm">Six modules including motorway driving, night driving, and driving in all weathers to make you a safer driver.</p>
-      </div>
-      <div class="bg-[#FEFDF6] rounded-xl p-6 border border-[#F8F0CB] shadow-sm">
-        <div class="text-3xl mb-3">🛣️</div>
-        <h3 class="font-display font-bold text-lg text-[#453E18] mb-2">Motorway Lessons</h3>
-        <p class="text-[#453E18]/80 text-sm">2-hour motorway lesson for £80. Build confidence on faster roads with an experienced instructor by your side.</p>
-      </div>
-      <div class="bg-[#FEFDF6] rounded-xl p-6 border border-[#F8F0CB] shadow-sm">
-        <div class="text-3xl mb-3">🔄</div>
-        <h3 class="font-display font-bold text-lg text-[#453E18] mb-2">Refresher Lessons</h3>
-        <p class="text-[#453E18]/80 text-sm">Already have your licence but feeling rusty? Refresher lessons help you regain confidence. Please call to enquire.</p>
+      <div class="bg-white rounded-xl shadow-sm border border-[#F8F0CB] overflow-hidden">
+        <img src="/D1912/images/accelerate-car-tuition.png" alt="Pass Plus Glasgow" width="291" height="220" class="w-full object-cover" loading="lazy" />
+        <div class="p-6">
+          <h3 class="font-bold text-[#423F33] text-xl mb-2">Pass Plus</h3>
+          <p class="text-[#8B7C30] text-sm mb-4">Post-test training covering motorways, night driving, rural roads and dual carriageways. May reduce your insurance premium.</p>
+          <a href="/D1912/pass-plus-glasgow" class="text-[#B9A540] font-semibold text-sm hover:underline">Find out more &rarr;</a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Areas covered -->
-<section class="py-20 bg-[#FEFDF6]">
-  <div class="max-w-6xl mx-auto px-4">
-    <div class="flex flex-col md:flex-row gap-12 items-start">
-      <div class="flex-1">
-        <h2 class="font-display font-bold text-3xl text-[#453E18] mb-6">Areas I Cover</h2>
-        <p class="text-[#453E18]/80 mb-8">I provide driving lessons across Glasgow and the surrounding areas. If your area isn't listed below, please get in touch as I may still be able to help.</p>
-        <div class="grid grid-cols-2 gap-4">
+<!-- About Me -->
+<section class="py-16 px-4 bg-[#FDFBF1]">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <img src="/D1912/images/steven-love.png" alt="Steven Love, driving instructor" width="291" height="220" class="rounded-xl shadow-md w-full object-cover" loading="lazy" />
+    </div>
+    <div>
+      <h2 class="text-3xl font-bold text-[#423F33] mb-5">About Me</h2>
+      <p class="text-[#453E18] mb-4">Accelerate Driving Tuition was established in 1998 by myself, Steven Love. Having qualified as an instructor in 1996 and worked for two years for a reputable driving school, I built Accelerate with one goal: quality tuition and a professional service.</p>
+      <p class="text-[#453E18] mb-4">I understand that each pupil is completely different and we all learn at different speeds. With this in mind I train each pupil to a very high standard, giving them the awareness and safety that will keep them safe on our roads for many years.</p>
+      <p class="text-[#453E18] mb-6">We welcome nervous, young, and older drivers. Our aim is to teach safe driving for passing your test and beyond.</p>
+      <div class="flex flex-wrap gap-3">
+        <a href="/D1912/about-us" class="bg-[#423F33] text-white font-bold px-5 py-2 rounded-lg hover:bg-[#35322A] transition-colors">Read More</a>
+        <a href="tel:07397040400" class="border border-[#423F33] text-[#423F33] font-semibold px-5 py-2 rounded-lg hover:bg-[#423F33] hover:text-white transition-colors">Call Me</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Accreditations -->
+<section class="py-10 px-4 bg-white border-y border-[#F8F0CB]">
+  <div class="max-w-5xl mx-auto flex flex-wrap justify-center items-center gap-10">
+    <img src="/D1912/images/logos-acc.png" alt="Driving school accreditations" width="607" height="130" class="h-12 object-contain" loading="lazy" />
+    <img src="/D1912/images/logo-accelerate-s.png" alt="Accelerate Driving Tuition" width="419" height="140" class="h-10 object-contain" loading="lazy" />
+  </div>
+</section>
+
+<!-- Recent Passes -->
+<section class="py-16 px-4">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-[#423F33] mb-3 text-center">Recent Passes</h2>
+    <p class="text-center text-[#8B7C30] mb-10">Congratulations to pupils who recently passed with Accelerate!</p>
+    <div class="grid md:grid-cols-3 gap-6">
+      <a href="/D1912/thomas-cunningham" class="bg-white rounded-xl border border-[#F8F0CB] shadow-sm p-6 hover:shadow-md hover:border-[#E7CE50] transition-all block">
+        <div class="flex items-center gap-4 mb-3">
+          <img src="/D1912/images/img-0613-190x190.jpg" alt="Thomas Cunningham" width="60" height="60" class="rounded-full object-cover w-14 h-14" loading="lazy" />
           <div>
-            <h3 class="font-display font-bold text-[#453E18] mb-2">Glasgow</h3>
-            <ul class="text-sm text-[#453E18]/80 space-y-1">
-              <li>Glasgow City Centre</li>
-              <li>East End</li>
-              <li>South Side</li>
-              <li>West End</li>
-              <li>Glasgow North</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="font-display font-bold text-[#453E18] mb-2">Surrounding Areas</h3>
-            <ul class="text-sm text-[#453E18]/80 space-y-1">
-              <li>East Kilbride</li>
-              <li>Hamilton</li>
-              <li>Paisley</li>
-              <li>Rutherglen</li>
-              <li>Cambuslang</li>
-            </ul>
+            <p class="font-bold text-[#423F33]">Thomas Cunningham</p>
+            <span class="text-xs bg-[#E7CE50] text-[#423F33] px-2 py-0.5 rounded-full font-bold">PASSED</span>
           </div>
         </div>
-        <a href="/D1912/glasgow-areas" class="inline-block mt-6 bg-[#E7CE50] text-[#453E18] font-bold px-6 py-2 rounded-lg hover:bg-[#B9A540] transition-colors">View All Areas</a>
+        <p class="text-sm text-[#8B7C30]">Thomas passed with only 3 minor faults. Brilliant result!</p>
+      </a>
+      <a href="/D1912/kirsty-stone" class="bg-white rounded-xl border border-[#F8F0CB] shadow-sm p-6 hover:shadow-md hover:border-[#E7CE50] transition-all block">
+        <div class="flex items-center gap-4 mb-3">
+          <img src="/D1912/images/img-0499-190x190.jpg" alt="Kirsty Stone" width="60" height="60" class="rounded-full object-cover w-14 h-14" loading="lazy" />
+          <div>
+            <p class="font-bold text-[#423F33]">Kirsty Stone</p>
+            <span class="text-xs bg-[#E7CE50] text-[#423F33] px-2 py-0.5 rounded-full font-bold">PASSED</span>
+          </div>
+        </div>
+        <p class="text-sm text-[#8B7C30]">Kirsty passed first time with only 3 minor faults. Well done!</p>
+      </a>
+      <div class="bg-white rounded-xl border border-[#F8F0CB] shadow-sm p-6">
+        <div class="flex items-center gap-4 mb-3">
+          <div class="w-14 h-14 rounded-full bg-[#E7CE50] flex items-center justify-center text-[#423F33] font-bold text-xl flex-shrink-0">M</div>
+          <div>
+            <p class="font-bold text-[#423F33]">Mark McPherson</p>
+            <span class="text-xs bg-[#E7CE50] text-[#423F33] px-2 py-0.5 rounded-full font-bold">PASSED</span>
+          </div>
+        </div>
+        <p class="text-sm text-[#8B7C30]">Yet another pass with Accelerate! Well done, Mark.</p>
       </div>
-      <div class="flex-1 flex justify-center">
-        <img src="/D1912/images/img-slider1.png" alt="Driving lessons areas covered Glasgow" class="rounded-xl shadow-lg max-w-sm w-full" loading="lazy" width="480" height="340" />
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Recent passes -->
-<section class="py-16 bg-[#423F33] text-white">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="font-display font-bold text-3xl text-white text-center mb-10">Recent Passes</h2>
-    <div class="flex flex-wrap justify-center gap-6">
-      <div class="bg-white/10 rounded-xl px-8 py-6 text-center">
-        <div class="text-4xl mb-2">🎉</div>
-        <p class="font-display font-bold text-white">Thomas Cunningham</p>
-        <p class="text-white/70 text-sm">Passed first time</p>
-        <a href="/D1912/thomas-cunningham" class="text-[#E7CE50] text-sm hover:underline">View details</a>
-      </div>
-      <div class="bg-white/10 rounded-xl px-8 py-6 text-center">
-        <div class="text-4xl mb-2">🎉</div>
-        <p class="font-display font-bold text-white">Kirsty Stone</p>
-        <p class="text-white/70 text-sm">Passed first time</p>
-        <a href="/D1912/kirsty-stone" class="text-[#E7CE50] text-sm hover:underline">View details</a>
-      </div>
-      <div class="bg-white/10 rounded-xl px-8 py-6 text-center">
-        <div class="text-4xl mb-2">🎉</div>
-        <p class="font-display font-bold text-white">Mark McPherson</p>
-        <p class="text-white/70 text-sm">Passed</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- YouTube video -->
-<section class="py-20 bg-white">
-  <div class="max-w-4xl mx-auto px-4 text-center">
-    <h2 class="font-display font-bold text-3xl text-[#453E18] mb-4">See Accelerate in Action</h2>
-    <p class="text-[#453E18]/70 mb-8">Watch to find out more about what it's like to learn with Accelerate Driving Tuition.</p>
-    <div class="aspect-video rounded-xl overflow-hidden shadow-lg">
-      <iframe src="https://www.youtube.com/embed/eIVX3Q3zWUM?rel=0&autoplay=0&showinfo=0&autohide=1&egm=0&vq=hd720&controls=0&border=0" title="Accelerate Driving Tuition" class="w-full h-full" allowfullscreen loading="lazy"></iframe>
     </div>
   </div>
 </section>
 
 <!-- Testimonials -->
-<section class="py-20 bg-[#FEFDF6]">
-  <div class="max-w-6xl mx-auto px-4">
-    <h2 class="font-display font-bold text-3xl text-[#453E18] text-center mb-12">What My Students Say</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="bg-white rounded-xl p-6 shadow-sm border border-[#F8F0CB]">
-        <p class="text-[#453E18]/80 mb-4 italic">"Having passed my test first time with Accelerate Driving Tuition, I would have no problems recommending them to anyone wishing to take lessons. All my lessons went well and I was put at ease from the moment I got into the car."</p>
-        <p class="font-semibold text-[#453E18]">Alexander Paton</p>
-        <p class="text-sm text-[#453E18]/60">East Kilbride</p>
+<section class="py-16 px-4 bg-[#423F33]">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-white mb-10 text-center">Testimonials</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white/10 rounded-xl p-6 border border-white/20">
+        <p class="text-white/90 mb-5 italic text-sm">"Having passed my test first time with Accelerate Driving Tuition, I would have no problems recommending them to anyone wishing to take lessons. All my lessons went well and I was put at ease from the moment I got into the car."</p>
+        <p class="text-[#E7CE50] font-bold">Alexander Paton</p>
+        <p class="text-white/60 text-sm">Lessons &bull; East Kilbride</p>
       </div>
-      <div class="bg-white rounded-xl p-6 shadow-sm border border-[#F8F0CB]">
-        <p class="text-[#453E18]/80 mb-4 italic">"I can only thank Accelerate, for getting me my wife and my son through the driving test. As soon as my daughter is seventeen I will be phoning to book her in for lessons."</p>
-        <p class="font-semibold text-[#453E18]">William Lees</p>
-        <p class="text-sm text-[#453E18]/60">Hamilton</p>
+      <div class="bg-white/10 rounded-xl p-6 border border-white/20">
+        <p class="text-white/90 mb-5 italic text-sm">"I can only thank Accelerate for getting me, my wife and my son through the driving test. As soon as my daughter is seventeen I will be phoning to book her in for lessons."</p>
+        <p class="text-[#E7CE50] font-bold">William Lees</p>
+        <p class="text-white/60 text-sm">Advanced Driving &bull; Hamilton</p>
       </div>
-      <div class="bg-white rounded-xl p-6 shadow-sm border border-[#F8F0CB]">
-        <p class="text-[#453E18]/80 mb-4 italic">"I had been with other driving schools and felt I wasn't progressing as I should. I went on to pass my next test with one minor fault. I can only say thanks."</p>
-        <p class="font-semibold text-[#453E18]">W Rossburgh</p>
-        <p class="text-sm text-[#453E18]/60">Glasgow</p>
+      <div class="bg-white/10 rounded-xl p-6 border border-white/20">
+        <p class="text-white/90 mb-5 italic text-sm">"I had been with other driving schools and felt I wasn't progressing as I should. I gave up lessons for a while having failed three tests, but I went on to pass my next test with one minor fault. I can only say thanks."</p>
+        <p class="text-[#E7CE50] font-bold">W Rossburgh</p>
+        <p class="text-white/60 text-sm">Glasgow</p>
       </div>
+    </div>
+    <div class="mt-10 text-center">
+      <img src="/D1912/images/img-cars.png" alt="Accelerate Driving Tuition vehicles" width="547" height="254" class="mx-auto rounded-xl shadow-lg" loading="lazy" />
     </div>
   </div>
 </section>
 
-<!-- Opening hours -->
-<section class="py-16 bg-white">
-  <div class="max-w-3xl mx-auto px-4 text-center">
-    <h2 class="font-display font-bold text-3xl text-[#453E18] mb-8">Opening Hours</h2>
-    <div class="bg-[#FEFDF6] rounded-xl border border-[#F8F0CB] overflow-hidden">
-      <table class="w-full text-sm">
-        <tbody>
-          <tr class="border-b border-[#F8F0CB]">
-            <td class="py-3 px-6 text-left font-semibold text-[#453E18]">Monday to Saturday</td>
-            <td class="py-3 px-6 text-right text-[#453E18]/80">7:00 AM &ndash; 10:30 PM</td>
-          </tr>
-          <tr>
-            <td class="py-3 px-6 text-left font-semibold text-[#453E18]">Sunday</td>
-            <td class="py-3 px-6 text-right text-[#453E18]/80">7:00 AM &ndash; 11:30 PM</td>
-          </tr>
-        </tbody>
-      </table>
+<!-- Areas covered -->
+<section class="py-16 px-4 bg-[#FDFBF1]">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-[#423F33] mb-3 text-center">Areas I Cover</h2>
+    <p class="text-[#8B7C30] mb-10 text-center max-w-xl mx-auto">I cover Glasgow and all surrounding areas. Any area not listed will still be accommodated where possible.</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+      <a href="/D1912/driving-lessons-glasgow" class="bg-white border border-[#F8F0CB] rounded-xl p-4 text-center hover:border-[#E7CE50] hover:shadow-sm transition-all">
+        <p class="font-bold text-[#423F33]">Glasgow</p><p class="text-xs text-[#8B7C30] mt-1">All areas</p>
+      </a>
+      <a href="/D1912/driving-lessons-east-kilbride" class="bg-white border border-[#F8F0CB] rounded-xl p-4 text-center hover:border-[#E7CE50] hover:shadow-sm transition-all">
+        <p class="font-bold text-[#423F33]">East Kilbride</p><p class="text-xs text-[#8B7C30] mt-1">South Lanarkshire</p>
+      </a>
+      <a href="/D1912/driving-lessons-hamilton" class="bg-white border border-[#F8F0CB] rounded-xl p-4 text-center hover:border-[#E7CE50] hover:shadow-sm transition-all">
+        <p class="font-bold text-[#423F33]">Hamilton</p><p class="text-xs text-[#8B7C30] mt-1">South Lanarkshire</p>
+      </a>
+      <a href="/D1912/driving-lessons-paisley" class="bg-white border border-[#F8F0CB] rounded-xl p-4 text-center hover:border-[#E7CE50] hover:shadow-sm transition-all">
+        <p class="font-bold text-[#423F33]">Paisley</p><p class="text-xs text-[#8B7C30] mt-1">Renfrewshire</p>
+      </a>
     </div>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <a href="/D1912/driving-lessons-glasgow-west-end" class="bg-white border border-[#F8F0CB] rounded-xl p-4 text-center hover:border-[#E7CE50] hover:shadow-sm transition-all">
+        <p class="font-bold text-[#423F33]">West End</p><p class="text-xs text-[#8B7C30] mt-1">Glasgow</p>
+      </a>
+      <a href="/D1912/driving-lessons-glasgow-north" class="bg-white border border-[#F8F0CB] rounded-xl p-4 text-center hover:border-[#E7CE50] hover:shadow-sm transition-all">
+        <p class="font-bold text-[#423F33]">North</p><p class="text-xs text-[#8B7C30] mt-1">Glasgow</p>
+      </a>
+      <a href="/D1912/driving-lessons-glasgow-east-end" class="bg-white border border-[#F8F0CB] rounded-xl p-4 text-center hover:border-[#E7CE50] hover:shadow-sm transition-all">
+        <p class="font-bold text-[#423F33]">East End</p><p class="text-xs text-[#8B7C30] mt-1">Glasgow</p>
+      </a>
+      <a href="/D1912/driving-lessons-glasgow-southside" class="bg-white border border-[#F8F0CB] rounded-xl p-4 text-center hover:border-[#E7CE50] hover:shadow-sm transition-all">
+        <p class="font-bold text-[#423F33]">South Side</p><p class="text-xs text-[#8B7C30] mt-1">Glasgow</p>
+      </a>
+    </div>
+    <p class="text-center mt-6"><a href="/D1912/glasgow-areas" class="text-[#B9A540] font-semibold hover:underline">View full areas list &rarr;</a></p>
   </div>
 </section>
 
-<!-- CTA section -->
-<section class="py-20 bg-[#E7CE50]">
-  <div class="max-w-3xl mx-auto px-4 text-center">
-    <h2 class="font-display font-bold text-3xl text-[#453E18] mb-4">Ready to Get Started?</h2>
-    <p class="text-[#453E18]/80 mb-8">Call or text today to book your first lesson. I'm available seven days a week.</p>
+<!-- CTA -->
+<section class="py-16 px-4 bg-[#E7CE50]">
+  <div class="max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-[#423F33] mb-4">Ready to Lose Those L Plates?</h2>
+    <p class="text-[#453E18] mb-8 max-w-xl mx-auto">We have great introductory offers and block bookings. Let me teach you how to pass and become a safe, confident driver.</p>
     <div class="flex flex-wrap justify-center gap-4">
-      <a href="tel:07397040400" class="bg-[#423F33] text-white font-bold px-8 py-3 rounded-lg hover:bg-[#2e2c23] transition-colors">📞 07397 040400</a>
-      <a href="/D1912/contact-us" class="border-2 border-[#423F33] text-[#423F33] font-bold px-8 py-3 rounded-lg hover:bg-[#423F33] hover:text-white transition-colors">Contact Me</a>
+      <a href="tel:07397040400" class="bg-[#423F33] text-white font-bold px-8 py-3 rounded-lg hover:bg-[#35322A] transition-colors text-lg">📞 07397 040400</a>
+      <a href="/D1912/contact-us" class="border-2 border-[#423F33] text-[#423F33] font-bold px-8 py-3 rounded-lg hover:bg-[#423F33] hover:text-white transition-colors text-lg">Send a Message</a>
     </div>
   </div>
 </section>
 
-<!-- Logos strip -->
-<section class="py-10 bg-white border-t border-[#F8F0CB]">
-  <div class="max-w-4xl mx-auto px-4 flex flex-wrap justify-center items-center gap-8">
-    <img src="/D1912/images/logos-acc.png" alt="Accreditations" class="h-12 object-contain" loading="lazy" />
-    <img src="/D1912/images/img-cars.png" alt="Accelerate driving cars" class="h-12 object-contain" loading="lazy" />
+<footer class="bg-[#35322A] text-white py-12 px-4">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <img src="/D1912/images/logo-l-f.png" alt="Accelerate Driving Tuition" width="50" height="48" class="rounded" loading="lazy" />
+        <div>
+          <span class="text-[#E7CE50] font-bold block">Accelerate</span>
+          <span class="text-white text-sm">Driving Tuition</span>
+        </div>
+      </div>
+      <p class="text-white/70 text-sm mb-3">Expert driving lessons in Glasgow and surrounding areas since 1998.</p>
+      <p class="text-sm text-white/80">84 Aros Dr, Glasgow</p>
+      <a href="tel:07397040400" class="text-[#E7CE50] font-semibold mt-1 block hover:underline">07397 040400</a>
+    </div>
+    <div>
+      <h3 class="font-bold text-[#E7CE50] mb-4 uppercase text-xs tracking-wider">Main Pages</h3>
+      <ul class="space-y-2 text-sm text-white/80">
+        <li><a href="/D1912" class="hover:text-[#E7CE50] transition-colors">Home</a></li>
+        <li><a href="/D1912/about-us" class="hover:text-[#E7CE50] transition-colors">About Me</a></li>
+        <li><a href="/D1912/lessons-cost-glasgow" class="hover:text-[#E7CE50] transition-colors">Lessons &amp; Cost</a></li>
+        <li><a href="/D1912/glasgow-areas" class="hover:text-[#E7CE50] transition-colors">Areas</a></li>
+        <li><a href="/D1912/contact-us" class="hover:text-[#E7CE50] transition-colors">Contact Us</a></li>
+        <li><a href="/D1912/thomas-cunningham" class="hover:text-[#E7CE50] transition-colors">Thomas Cunningham</a></li>
+        <li><a href="/D1912/kirsty-stone" class="hover:text-[#E7CE50] transition-colors">Kirsty Stone</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-bold text-[#E7CE50] mb-4 uppercase text-xs tracking-wider">Services</h3>
+      <ul class="space-y-2 text-sm text-white/80">
+        <li><a href="/D1912/pass-plus-glasgow" class="hover:text-[#E7CE50] transition-colors">Pass Plus</a></li>
+        <li><a href="/D1912/intensive-driving-courses" class="hover:text-[#E7CE50] transition-colors">Intensive Courses</a></li>
+        <li><a href="/D1912/show-me-tell-me" class="hover:text-[#E7CE50] transition-colors">Show Me / Tell Me</a></li>
+        <li><a href="/D1912/driving-instructor-jobs-glasgow" class="hover:text-[#E7CE50] transition-colors">Instructor Jobs</a></li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-bold text-[#E7CE50] mb-4 uppercase text-xs tracking-wider">Areas</h3>
+      <ul class="space-y-2 text-sm text-white/80">
+        <li><a href="/D1912/driving-lessons-glasgow" class="hover:text-[#E7CE50] transition-colors">Glasgow</a></li>
+        <li><a href="/D1912/driving-lessons-east-kilbride" class="hover:text-[#E7CE50] transition-colors">East Kilbride</a></li>
+        <li><a href="/D1912/driving-lessons-hamilton" class="hover:text-[#E7CE50] transition-colors">Hamilton</a></li>
+        <li><a href="/D1912/driving-lessons-paisley" class="hover:text-[#E7CE50] transition-colors">Paisley</a></li>
+        <li><a href="/D1912/driving-lessons-glasgow-north" class="hover:text-[#E7CE50] transition-colors">Glasgow North</a></li>
+        <li><a href="/D1912/driving-lessons-glasgow-southside" class="hover:text-[#E7CE50] transition-colors">Glasgow South Side</a></li>
+        <li><a href="/D1912/driving-lessons-glasgow-east-end" class="hover:text-[#E7CE50] transition-colors">Glasgow East End</a></li>
+        <li><a href="/D1912/driving-lessons-glasgow-west-end" class="hover:text-[#E7CE50] transition-colors">Glasgow West End</a></li>
+      </ul>
+    </div>
   </div>
-</section>
-
-<!-- Footer -->
-<footer class="bg-[#423F33] text-white pt-12 pb-6">
-  <div class="max-w-6xl mx-auto px-4">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10">
-      <div>
-        <h3 class="font-display font-bold text-lg mb-3 text-[#E7CE50]">Accelerate Driving Tuition</h3>
-        <p class="text-white/70 text-sm mb-1">84 Aros Dr, Glasgow</p>
-        <p class="text-white/70 text-sm mb-1"><a href="tel:07397040400" class="hover:text-[#E7CE50] transition-colors">07397 040400</a></p>
-        <p class="text-white/70 text-sm">Mon&ndash;Sat: 7:00 AM &ndash; 10:30 PM<br/>Sun: 7:00 AM &ndash; 11:30 PM</p>
-      </div>
-      <div>
-        <h3 class="font-display font-bold text-sm uppercase tracking-wide text-white/60 mb-3">Main Pages</h3>
-        <ul class="space-y-1 text-sm">
-          <li><a href="/D1912" class="text-white/80 hover:text-[#E7CE50] transition-colors">Home</a></li>
-          <li><a href="/D1912/about-us" class="text-white/80 hover:text-[#E7CE50] transition-colors">About Me</a></li>
-          <li><a href="/D1912/lessons-cost-glasgow" class="text-white/80 hover:text-[#E7CE50] transition-colors">Lessons &amp; Cost</a></li>
-          <li><a href="/D1912/glasgow-areas" class="text-white/80 hover:text-[#E7CE50] transition-colors">Areas</a></li>
-          <li><a href="/D1912/blog" class="text-white/80 hover:text-[#E7CE50] transition-colors">Blog</a></li>
-          <li><a href="/D1912/contact-us" class="text-white/80 hover:text-[#E7CE50] transition-colors">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="font-display font-bold text-sm uppercase tracking-wide text-white/60 mb-3">More</h3>
-        <ul class="grid grid-cols-2 gap-x-4 gap-y-1 text-sm">
-          <li><a href="/D1912/driving-lessons-glasgow" class="text-white/80 hover:text-[#E7CE50] transition-colors">Glasgow</a></li>
-          <li><a href="/D1912/driving-lessons-east-kilbride" class="text-white/80 hover:text-[#E7CE50] transition-colors">East Kilbride</a></li>
-          <li><a href="/D1912/driving-lessons-hamilton" class="text-white/80 hover:text-[#E7CE50] transition-colors">Hamilton</a></li>
-          <li><a href="/D1912/driving-lessons-paisley" class="text-white/80 hover:text-[#E7CE50] transition-colors">Paisley</a></li>
-          <li><a href="/D1912/driving-lessons-glasgow-north" class="text-white/80 hover:text-[#E7CE50] transition-colors">Glasgow North</a></li>
-          <li><a href="/D1912/driving-lessons-glasgow-southside" class="text-white/80 hover:text-[#E7CE50] transition-colors">Glasgow South Side</a></li>
-          <li><a href="/D1912/driving-lessons-glasgow-east-end" class="text-white/80 hover:text-[#E7CE50] transition-colors">Glasgow East End</a></li>
-          <li><a href="/D1912/driving-lessons-glasgow-west-end" class="text-white/80 hover:text-[#E7CE50] transition-colors">Glasgow West End</a></li>
-          <li><a href="/D1912/pass-plus-glasgow" class="text-white/80 hover:text-[#E7CE50] transition-colors">Pass Plus</a></li>
-          <li><a href="/D1912/intensive-driving-courses" class="text-white/80 hover:text-[#E7CE50] transition-colors">Intensive Courses</a></li>
-          <li><a href="/D1912/show-me-tell-me" class="text-white/80 hover:text-[#E7CE50] transition-colors">Show Me / Tell Me</a></li>
-          <li><a href="/D1912/driving-instructor-jobs-glasgow" class="text-white/80 hover:text-[#E7CE50] transition-colors">Instructor Jobs</a></li>
-          <li><a href="/D1912/thomas-cunningham" class="text-white/80 hover:text-[#E7CE50] transition-colors">Thomas Cunningham</a></li>
-          <li><a href="/D1912/kirsty-stone" class="text-white/80 hover:text-[#E7CE50] transition-colors">Kirsty Stone</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="border-t border-white/10 pt-5 text-center text-sm text-white/50">
-      &copy; {new Date().getFullYear()} Accelerate Driving Tuition. All rights reserved.
-    </div>
+  <div class="max-w-6xl mx-auto mt-8 pt-6 border-t border-white/10 text-center text-white/50 text-sm">
+    <p>&copy; {new Date().getFullYear()} Accelerate Driving Tuition &bull; 84 Aros Dr, Glasgow &bull; 07397 040400</p>
   </div>
 </footer>
 
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn?.addEventListener('click', () => menu?.classList.toggle('hidden'));
+</script>
 </body>
 </html>

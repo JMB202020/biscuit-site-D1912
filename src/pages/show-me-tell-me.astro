@@ -2,263 +2,369 @@
 import '../styles/site.css';
 ---
 <!DOCTYPE html>
-<html lang="en-GB">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Show Me / Tell Me Questions | Accelerate Driving Tuition Glasgow</title>
-  <meta name="description" content="Show Me / Tell Me questions for the UK practical driving test. Full list of questions and answers from Accelerate Driving Tuition in Glasgow." />
+  <title>Show Me Tell Me Questions | Accelerate Driving Tuition</title>
   
 </head>
-<body>
+<body class="bg-[#FEFDF6] text-[#453E18]">
 
-<!-- Preview Banner -->
 <div style="background:white;color:#374151;padding:8px 16px;text-align:center;font-size:13px;position:sticky;top:0;z-index:50;border-bottom:1px solid #E5E7EB;box-shadow:0 1px 3px rgba(0,0,0,0.05)"><div style="max-width:56rem;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap"><span>Preview redesign for <strong style="color:#111827">Accelerate Driving Tuition</strong></span><a href="https://biscuitweb.co.uk/activate?id=D1912&amp;name=Accelerate%20Driving%20Tuition" style="display:inline-flex;align-items:center;padding:4px 14px;background:#111827;color:white;font-weight:700;font-size:11px;border-radius:9999px;text-decoration:none">Like it? Just £20/month</a></div></div>
 
-<!-- Nav -->
-<header class="bg-[#423F33] sticky top-[41px] z-40">
-  <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-    <a href="/D1912" class="flex flex-col leading-tight">
-      <span class="font-display font-extrabold text-lg text-[#E7CE50]">Accelerate Driving Tuition</span>
-      <span class="font-body text-xs text-white/60 tracking-wide uppercase">Glasgow</span>
+<header class="sticky top-[41px] z-40 bg-[#453E18] shadow-md">
+  <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+    <a href="/D1912" class="flex items-center gap-3">
+      <img src="/D1912/images/logo-accelerate.png" alt="Accelerate Driving Tuition" width="200" height="34" class="h-9 w-auto" />
     </a>
-    <div class="hidden md:flex items-center gap-6 text-sm font-semibold text-white">
-      <a href="/D1912" class="hover:text-[#E7CE50] transition-colors">Home</a>
-      <a href="/D1912/about-us" class="hover:text-[#E7CE50] transition-colors">About Me</a>
-      <a href="/D1912/lessons-cost-glasgow" class="hover:text-[#E7CE50] transition-colors">Lessons &amp; Cost</a>
-      <a href="/D1912/glasgow-areas" class="hover:text-[#E7CE50] transition-colors">Areas</a>
-      <a href="/D1912/blog" class="hover:text-[#E7CE50] transition-colors">Blog</a>
-      <a href="/D1912/contact-us" class="bg-[#E7CE50] text-[#453E18] px-4 py-2 rounded-full font-bold hover:bg-[#B9A540] transition-colors">Contact</a>
-    </div>
-    <button id="menu-btn" class="md:hidden p-2 text-white" aria-label="Open menu">
-      <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    <nav class="hidden lg:flex items-center gap-1">
+      <a href="/D1912" class="px-3 py-2 rounded-md text-sm font-medium text-[#F8F0CB] hover:bg-[#E7CE50] hover:text-[#453E18] transition-colors">Home</a>
+      <a href="/D1912/about-us" class="px-3 py-2 rounded-md text-sm font-medium text-[#F8F0CB] hover:bg-[#E7CE50] hover:text-[#453E18] transition-colors">About Me</a>
+      <a href="/D1912/lessons-cost-glasgow" class="px-3 py-2 rounded-md text-sm font-medium text-[#F8F0CB] hover:bg-[#E7CE50] hover:text-[#453E18] transition-colors">Lessons &amp; Cost</a>
+      <a href="/D1912/glasgow-areas" class="px-3 py-2 rounded-md text-sm font-medium text-[#F8F0CB] hover:bg-[#E7CE50] hover:text-[#453E18] transition-colors">Areas</a>
+      <a href="/D1912/pass-plus-glasgow" class="px-3 py-2 rounded-md text-sm font-medium text-[#F8F0CB] hover:bg-[#E7CE50] hover:text-[#453E18] transition-colors">Pass Plus</a>
+      <a href="/D1912/contact-us" class="px-3 py-2 rounded-md text-sm font-medium text-[#F8F0CB] hover:bg-[#E7CE50] hover:text-[#453E18] transition-colors">Contact</a>
+    </nav>
+    <button id="menu-btn" class="lg:hidden p-2 text-[#F8F0CB] hover:text-[#E7CE50]" aria-label="Open menu">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
     </button>
-  </nav>
-  <div id="mobile-menu" class="hidden md:hidden bg-[#423F33] border-t border-white/10 px-4 py-4 space-y-3 text-sm font-semibold">
-    <a href="/D1912" class="block text-white hover:text-[#E7CE50]">Home</a>
-    <a href="/D1912/about-us" class="block text-white hover:text-[#E7CE50]">About Me</a>
-    <a href="/D1912/lessons-cost-glasgow" class="block text-white hover:text-[#E7CE50]">Lessons &amp; Cost</a>
-    <a href="/D1912/glasgow-areas" class="block text-white hover:text-[#E7CE50]">Areas</a>
-    <a href="/D1912/blog" class="block text-white hover:text-[#E7CE50]">Blog</a>
-    <a href="/D1912/contact-us" class="block text-white hover:text-[#E7CE50]">Contact</a>
+  </div>
+  <div id="mobile-menu" class="hidden lg:hidden bg-[#342F12] px-4 pb-4">
+    <a href="/D1912" class="block py-2 text-sm text-[#F8F0CB] hover:text-[#E7CE50]">Home</a>
+    <a href="/D1912/about-us" class="block py-2 text-sm text-[#F8F0CB] hover:text-[#E7CE50]">About Me</a>
+    <a href="/D1912/lessons-cost-glasgow" class="block py-2 text-sm text-[#F8F0CB] hover:text-[#E7CE50]">Lessons &amp; Cost</a>
+    <a href="/D1912/glasgow-areas" class="block py-2 text-sm text-[#F8F0CB] hover:text-[#E7CE50]">Areas</a>
+    <a href="/D1912/pass-plus-glasgow" class="block py-2 text-sm text-[#F8F0CB] hover:text-[#E7CE50]">Pass Plus</a>
+    <a href="/D1912/contact-us" class="block py-2 text-sm text-[#F8F0CB] hover:text-[#E7CE50]">Contact</a>
   </div>
 </header>
-<script>
-  const btn = document.getElementById('menu-btn');
-  const menu = document.getElementById('mobile-menu');
-  btn?.addEventListener('click', () => menu?.classList.toggle('hidden'));
-</script>
 
-<!-- Hero -->
-<section class="bg-[#423F33] py-20 md:py-28">
-  <div class="max-w-6xl mx-auto px-4">
-    <div class="inline-block bg-[#E7CE50] text-[#453E18] text-xs font-bold px-3 py-1 rounded-full mb-5 uppercase tracking-wide">Driving Test Preparation</div>
-    <h1 class="font-display font-extrabold text-4xl md:text-5xl text-white mb-4">Show Me / Tell Me</h1>
-    <p class="text-white/80 text-xl max-w-2xl">The Show Me / Tell Me questions form part of the practical driving test. The examiner will ask you one "tell me" question before the test and one "show me" question during the test.</p>
+<!-- Page Hero -->
+<section class="bg-[#453E18] py-16">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h1 class="text-4xl font-bold text-white mb-3">Show Me / Tell Me Questions</h1>
+    <p class="text-[#F8F0CB] text-lg max-w-2xl mx-auto">All 19 vehicle safety questions asked in the DVSA practical driving test</p>
   </div>
 </section>
 
-<!-- Content -->
-<section class="py-16 bg-[#FEFDF6]">
-  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-10">
-    <div class="md:col-span-2">
-
-      <div class="flex items-center gap-4 mb-8">
-        <img src="/D1912/images/driving-lessons-glasgow-significance.jpg" alt="Driving test preparation" width="200" height="133" loading="lazy" class="rounded-xl object-cover" />
-        <div>
-          <p class="text-[#8B7C30]">I will cover all Show Me / Tell Me questions throughout your lessons so you feel fully prepared on test day. Use this page as a revision guide.</p>
-        </div>
+<!-- Intro -->
+<section class="py-12 bg-white">
+  <div class="max-w-4xl mx-auto px-4">
+    <div class="flex flex-col lg:flex-row gap-8 items-start mb-10">
+      <div class="flex-1">
+        <h2 class="text-2xl font-bold text-[#453E18] mb-4">What Are Show Me / Tell Me Questions?</h2>
+        <p class="text-[#453E18] mb-4 leading-relaxed">At the start of your practical driving test, the examiner will ask you one "tell me" question and one "show me" question about vehicle safety. These form part of your overall test result.</p>
+        <p class="text-[#453E18] leading-relaxed">A "tell me" question is answered before you start driving — you explain how you would carry out a safety check. A "show me" question is answered while driving — you demonstrate a safety feature such as using the rear windscreen demister.</p>
       </div>
-
-      <!-- Tell Me Questions -->
-      <h2 class="font-display font-bold text-2xl text-[#453E18] mb-2">Tell Me Questions</h2>
-      <p class="text-[#8B7C30] mb-6">Asked before the test begins, while the car is stationary.</p>
-
-      <div class="space-y-4 mb-10">
-        <div class="bg-white border border-[#F8F0CB] rounded-xl p-5">
-          <p class="font-semibold text-[#453E18] mb-2">Q1. Tell me how you'd check that the brakes are working before starting a journey.</p>
-          <p class="text-[#8B7C30] text-sm">Brakes should not feel spongy or slack. Brakes should be tested as you set off. Stopping distance depends on conditions.</p>
-        </div>
-
-        <div class="bg-white border border-[#F8F0CB] rounded-xl p-5">
-          <p class="font-semibold text-[#453E18] mb-2">Q2. Tell me where you'd find the information for the recommended tyre pressures for this car and how tyre pressures should be checked.</p>
-          <p class="text-[#8B7C30] text-sm">Manufacturer's guide, use a reliable pressure gauge when tyres are cold. Check including spare tyre.</p>
-        </div>
-
-        <div class="bg-white border border-[#F8F0CB] rounded-xl p-5">
-          <p class="font-semibold text-[#453E18] mb-2">Q3. Tell me how you make sure your head restraint is correctly adjusted so it provides the best protection in the event of a crash.</p>
-          <p class="text-[#8B7C30] text-sm">The head restraint should be adjusted so that the rigid part is at least as high as the eye or top of the ears.</p>
-        </div>
-
-        <div class="bg-white border border-[#F8F0CB] rounded-xl p-5">
-          <p class="font-semibold text-[#453E18] mb-2">Q4. Tell me how you'd check the tyres to ensure they have sufficient tread depth and that their general condition is safe to use on the road.</p>
-          <p class="text-[#8B7C30] text-sm">No cuts or bulges. 1.6mm of tread depth across the central three-quarters of the tyre width and around the entire outer circumference.</p>
-        </div>
-
-        <div class="bg-white border border-[#F8F0CB] rounded-xl p-5">
-          <p class="font-semibold text-[#453E18] mb-2">Q5. Tell me how you'd check that the headlights and tail lights are working.</p>
-          <p class="text-[#8B7C30] text-sm">Operate the switch (ignoring any warning lights), then walk round the vehicle to check.</p>
-        </div>
-
-        <div class="bg-white border border-[#F8F0CB] rounded-xl p-5">
-          <p class="font-semibold text-[#453E18] mb-2">Q6. Tell me how you'd know if there was a problem with your anti-lock braking system.</p>
-          <p class="text-[#8B7C30] text-sm">The warning light should illuminate if there is a fault with the ABS system.</p>
-        </div>
-
-        <div class="bg-white border border-[#F8F0CB] rounded-xl p-5">
-          <p class="font-semibold text-[#453E18] mb-2">Q7. Tell me how you'd check the direction indicators are working.</p>
-          <p class="text-[#8B7C30] text-sm">Operate the switch and walk round the vehicle. Use of reflections in the garage door or glass.</p>
-        </div>
-
-        <div class="bg-white border border-[#F8F0CB] rounded-xl p-5">
-          <p class="font-semibold text-[#453E18] mb-2">Q8. Tell me how you'd check the brake lights are working on this car.</p>
-          <p class="text-[#8B7C30] text-sm">Operate the brake pedal, make use of reflections in a garage door or ask someone to help.</p>
-        </div>
-
-        <div class="bg-white border border-[#F8F0CB] rounded-xl p-5">
-          <p class="font-semibold text-[#453E18] mb-2">Q9. Tell me how you'd check the power steering is working before starting a journey.</p>
-          <p class="text-[#8B7C30] text-sm">Apply gentle pressure to the steering wheel. Start the engine. The steering should become lighter and feel smooth and easy.</p>
-        </div>
-
-        <div class="bg-white border border-[#F8F0CB] rounded-xl p-5">
-          <p class="font-semibold text-[#453E18] mb-2">Q10. Tell me how you'd check the engine has sufficient oil.</p>
-          <p class="text-[#8B7C30] text-sm">Identify the dipstick and describe the correct checking process. Engine must be cool. Oil level between the min and max markers.</p>
-        </div>
-
-        <div class="bg-white border border-[#F8F0CB] rounded-xl p-5">
-          <p class="font-semibold text-[#453E18] mb-2">Q11. Tell me how you'd check the engine coolant is at the correct level.</p>
-          <p class="text-[#8B7C30] text-sm">Identify the coolant reservoir and describe the checking process. Level should be between min and max markers.</p>
-        </div>
-
-        <div class="bg-white border border-[#F8F0CB] rounded-xl p-5">
-          <p class="font-semibold text-[#453E18] mb-2">Q12. Tell me how you'd check that the braking system reservoir is at the correct level.</p>
-          <p class="text-[#8B7C30] text-sm">Identify the reservoir and describe the checking process. Level should be between min and max markers.</p>
-        </div>
+      <div class="flex-shrink-0 lg:w-2/5">
+        <img src="/D1912/images/driving-lessons-glasgow1.png" alt="Driving test preparation" width="291" height="220" class="rounded-xl shadow-lg w-full" loading="lazy" />
       </div>
-
-      <!-- Show Me Questions -->
-      <h2 class="font-display font-bold text-2xl text-[#453E18] mb-2">Show Me Questions</h2>
-      <p class="text-[#8B7C30] mb-6">Asked during the drive, while the car is moving.</p>
-
-      <div class="space-y-4 mb-10">
-        <div class="bg-[#FDFBF1] border border-[#F8F0CB] rounded-xl p-5">
-          <p class="font-semibold text-[#453E18] mb-2">S1. Show me how you'd wash and clean the front windscreen.</p>
-          <p class="text-[#8B7C30] text-sm">Use the windscreen washers and wipers to clean the windscreen.</p>
-        </div>
-
-        <div class="bg-[#FDFBF1] border border-[#F8F0CB] rounded-xl p-5">
-          <p class="font-semibold text-[#453E18] mb-2">S2. Show me how you'd set the rear demister.</p>
-          <p class="text-[#8B7C30] text-sm">Operate the appropriate control on the dashboard to activate the rear window demister.</p>
-        </div>
-
-        <div class="bg-[#FDFBF1] border border-[#F8F0CB] rounded-xl p-5">
-          <p class="font-semibold text-[#453E18] mb-2">S3. Show me how you'd operate the horn.</p>
-          <p class="text-[#8B7C30] text-sm">Use the horn by pressing the appropriate area of the steering wheel.</p>
-        </div>
-
-        <div class="bg-[#FDFBF1] border border-[#F8F0CB] rounded-xl p-5">
-          <p class="font-semibold text-[#453E18] mb-2">S4. Show me how you'd demist the front windscreen.</p>
-          <p class="text-[#8B7C30] text-sm">Use the heater and fan controls to demist the front windscreen.</p>
-        </div>
-
-        <div class="bg-[#FDFBF1] border border-[#F8F0CB] rounded-xl p-5">
-          <p class="font-semibold text-[#453E18] mb-2">S5. Show me how you'd open and close the side window.</p>
-          <p class="text-[#8B7C30] text-sm">Operate the appropriate window control to open and close the side window.</p>
-        </div>
-      </div>
-
-      <div class="bg-[#423F33] text-white rounded-xl p-6 mb-8">
-        <h3 class="font-display font-bold text-lg text-[#E7CE50] mb-3">Ready to Book?</h3>
-        <p class="text-white/80 mb-4">I will cover all Show Me / Tell Me questions throughout your lessons. Get in touch to arrange your first lesson.</p>
-        <div class="flex flex-wrap gap-3">
-          <a href="tel:07397040400" class="bg-[#E7CE50] text-[#453E18] font-bold px-5 py-2 rounded-full hover:bg-[#B9A540] transition-colors text-sm">07397 040400</a>
-          <a href="/D1912/contact-us" class="border border-white text-white font-bold px-5 py-2 rounded-full hover:bg-white/10 transition-colors text-sm">Contact Us</a>
-        </div>
-      </div>
-
-      <img src="/D1912/images/logo-l.png" alt="Accelerate Driving Tuition" width="150" height="60" loading="lazy" class="object-contain mb-6" />
     </div>
 
-    <!-- Sidebar -->
-    <div class="space-y-6">
-      <div class="bg-[#423F33] text-white rounded-xl p-6">
-        <h3 class="font-display font-bold text-lg text-[#E7CE50] mb-4">Book a Lesson</h3>
-        <p class="text-white/80 text-sm mb-4">Get in touch to start your driving lessons today.</p>
-        <a href="tel:07397040400" class="block text-center bg-[#E7CE50] text-[#453E18] font-bold px-4 py-3 rounded-lg mb-3 hover:bg-[#B9A540] transition-colors">07397 040400</a>
-        <a href="tel:08000288271" class="block text-center border border-white/30 text-white font-bold px-4 py-3 rounded-lg mb-3 hover:bg-white/10 transition-colors">0800 028 8271</a>
-        <a href="/D1912/contact-us" class="block text-center border border-white/30 text-white text-sm px-4 py-3 rounded-lg hover:bg-white/10 transition-colors">Send a Message</a>
+    <!-- Question combinations table -->
+    <div class="bg-[#FDFBF1] border border-[#F8F0CB] rounded-xl p-6 mb-10">
+      <h3 class="font-bold text-[#453E18] mb-4">Typical Question Combinations</h3>
+      <p class="text-sm text-[#8B7C30] mb-4">The examiner will ask one combination from this list. The first question is the "tell me" (answered before driving) and the second is the "show me" (demonstrated whilst driving).</p>
+      <div class="overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="bg-[#453E18] text-white">
+              <th class="px-4 py-2 text-left rounded-tl-lg">Tell Me (Q)</th>
+              <th class="px-4 py-2 text-left rounded-tr-lg">Show Me (Q)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b border-[#F8F0CB]"><td class="px-4 py-2 text-[#453E18]">Q1</td><td class="px-4 py-2 text-[#453E18]">Q9</td></tr>
+            <tr class="bg-[#FBF8E5] border-b border-[#F8F0CB]"><td class="px-4 py-2 text-[#453E18]">Q1</td><td class="px-4 py-2 text-[#453E18]">Q10</td></tr>
+            <tr class="border-b border-[#F8F0CB]"><td class="px-4 py-2 text-[#453E18]">Q2</td><td class="px-4 py-2 text-[#453E18]">Q9</td></tr>
+            <tr class="bg-[#FBF8E5] border-b border-[#F8F0CB]"><td class="px-4 py-2 text-[#453E18]">Q2</td><td class="px-4 py-2 text-[#453E18]">Q10</td></tr>
+            <tr class="border-b border-[#F8F0CB]"><td class="px-4 py-2 text-[#453E18]">Q3</td><td class="px-4 py-2 text-[#453E18]">Q11</td></tr>
+            <tr class="bg-[#FBF8E5] border-b border-[#F8F0CB]"><td class="px-4 py-2 text-[#453E18]">Q3</td><td class="px-4 py-2 text-[#453E18]">Q12</td></tr>
+            <tr class="border-b border-[#F8F0CB]"><td class="px-4 py-2 text-[#453E18]">Q4</td><td class="px-4 py-2 text-[#453E18]">Q11</td></tr>
+            <tr class="bg-[#FBF8E5] border-b border-[#F8F0CB]"><td class="px-4 py-2 text-[#453E18]">Q4</td><td class="px-4 py-2 text-[#453E18]">Q12</td></tr>
+            <tr class="border-b border-[#F8F0CB]"><td class="px-4 py-2 text-[#453E18]">Q5</td><td class="px-4 py-2 text-[#453E18]">Q13</td></tr>
+            <tr class="bg-[#FBF8E5] border-b border-[#F8F0CB]"><td class="px-4 py-2 text-[#453E18]">Q6</td><td class="px-4 py-2 text-[#453E18]">Q14</td></tr>
+            <tr class="border-b border-[#F8F0CB]"><td class="px-4 py-2 text-[#453E18]">Q7</td><td class="px-4 py-2 text-[#453E18]">Q15</td></tr>
+            <tr class="bg-[#FBF8E5] border-b border-[#F8F0CB]"><td class="px-4 py-2 text-[#453E18]">Q8</td><td class="px-4 py-2 text-[#453E18]">Q16</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- All Questions -->
+    <h2 class="text-2xl font-bold text-[#453E18] mb-6">All 19 Questions &amp; Answers</h2>
+    <div class="space-y-4">
+
+      <div class="bg-[#FDFBF1] border border-[#F8F0CB] rounded-xl p-6">
+        <div class="flex items-start gap-3">
+          <span class="bg-[#E7CE50] text-[#453E18] font-bold text-sm px-2.5 py-1 rounded-lg flex-shrink-0">Q1</span>
+          <div>
+            <p class="font-semibold text-[#453E18] mb-2">Open the bonnet, identify where you would check the engine oil level and tell me how you would check that the engine has sufficient oil.</p>
+            <p class="text-sm text-[#8B7C30]"><span class="font-semibold text-[#453E18]">Answer:</span> Identify the dipstick/oil level indicator, describe checking the oil level is between the minimum and maximum markers on the dipstick.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white border border-[#F8F0CB] rounded-xl p-6">
+        <div class="flex items-start gap-3">
+          <span class="bg-[#E7CE50] text-[#453E18] font-bold text-sm px-2.5 py-1 rounded-lg flex-shrink-0">Q2</span>
+          <div>
+            <p class="font-semibold text-[#453E18] mb-2">Open the bonnet, identify where you would check the engine coolant level and tell me how you would check that the engine has the correct level.</p>
+            <p class="text-sm text-[#8B7C30]"><span class="font-semibold text-[#453E18]">Answer:</span> Identify the high/low level markings on the coolant reservoir and describe checking the coolant is between the minimum and maximum markers.</p>
+          </div>
+        </div>
       </div>
 
       <div class="bg-[#FDFBF1] border border-[#F8F0CB] rounded-xl p-6">
-        <h3 class="font-display font-bold text-lg text-[#453E18] mb-4">Opening Hours</h3>
-        <ul class="text-sm text-[#8B7C30] space-y-2">
-          <li class="flex justify-between"><span>Mon to Sat</span><span class="font-semibold text-[#453E18]">7am to 10:30pm</span></li>
-          <li class="flex justify-between"><span>Sunday</span><span class="font-semibold text-[#453E18]">7am to 11:30pm</span></li>
-        </ul>
+        <div class="flex items-start gap-3">
+          <span class="bg-[#E7CE50] text-[#453E18] font-bold text-sm px-2.5 py-1 rounded-lg flex-shrink-0">Q3</span>
+          <div>
+            <p class="font-semibold text-[#453E18] mb-2">Open the bonnet, identify where the windscreen washer reservoir is and tell me how you would check the level.</p>
+            <p class="text-sm text-[#8B7C30]"><span class="font-semibold text-[#453E18]">Answer:</span> Identify the reservoir, explain checking the fluid level is at or above the minimum marker.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white border border-[#F8F0CB] rounded-xl p-6">
+        <div class="flex items-start gap-3">
+          <span class="bg-[#E7CE50] text-[#453E18] font-bold text-sm px-2.5 py-1 rounded-lg flex-shrink-0">Q4</span>
+          <div>
+            <p class="font-semibold text-[#453E18] mb-2">Tell me how you would check that the brakes are working before starting a journey.</p>
+            <p class="text-sm text-[#8B7C30]"><span class="font-semibold text-[#453E18]">Answer:</span> Brakes should not feel spongy or slack. Brakes should be tested as you set off — the vehicle should not pull to one side.</p>
+          </div>
+        </div>
       </div>
 
       <div class="bg-[#FDFBF1] border border-[#F8F0CB] rounded-xl p-6">
-        <h3 class="font-display font-bold text-lg text-[#453E18] mb-4">Related Pages</h3>
-        <ul class="text-sm space-y-2">
-          <li><a href="/D1912/lessons-cost-glasgow" class="text-[#8B7C30] hover:text-[#453E18] transition-colors">Lessons &amp; Cost</a></li>
-          <li><a href="/D1912/intensive-driving-courses" class="text-[#8B7C30] hover:text-[#453E18] transition-colors">Intensive Courses</a></li>
-          <li><a href="/D1912/pass-plus-glasgow" class="text-[#8B7C30] hover:text-[#453E18] transition-colors">Pass Plus</a></li>
-          <li><a href="/D1912/about-us" class="text-[#8B7C30] hover:text-[#453E18] transition-colors">About Me</a></li>
-        </ul>
+        <div class="flex items-start gap-3">
+          <span class="bg-[#E7CE50] text-[#453E18] font-bold text-sm px-2.5 py-1 rounded-lg flex-shrink-0">Q5</span>
+          <div>
+            <p class="font-semibold text-[#453E18] mb-2">Tell me how you would check that the tyres have sufficient tread depth and that their general condition is safe to use on the road.</p>
+            <p class="text-sm text-[#8B7C30]"><span class="font-semibold text-[#453E18]">Answer:</span> No cuts or bulges. 1.6mm of tread depth across the central three-quarters of the tyre, all the way round. Use a tread depth gauge or the tread depth indicators within the tyre grooves.</p>
+          </div>
+        </div>
       </div>
+
+      <div class="bg-white border border-[#F8F0CB] rounded-xl p-6">
+        <div class="flex items-start gap-3">
+          <span class="bg-[#E7CE50] text-[#453E18] font-bold text-sm px-2.5 py-1 rounded-lg flex-shrink-0">Q6</span>
+          <div>
+            <p class="font-semibold text-[#453E18] mb-2">Tell me how you would check that the headlights and tail lights are working.</p>
+            <p class="text-sm text-[#8B7C30]"><span class="font-semibold text-[#453E18]">Answer:</span> Operate the switch, then walk round the vehicle, or use reflections in a wall or garage door to check all lights are working. You may need the assistance of another person.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#FDFBF1] border border-[#F8F0CB] rounded-xl p-6">
+        <div class="flex items-start gap-3">
+          <span class="bg-[#E7CE50] text-[#453E18] font-bold text-sm px-2.5 py-1 rounded-lg flex-shrink-0">Q7</span>
+          <div>
+            <p class="font-semibold text-[#453E18] mb-2">Tell me how you would know if there was a problem with your anti-lock braking system.</p>
+            <p class="text-sm text-[#8B7C30]"><span class="font-semibold text-[#453E18]">Answer:</span> Warning light should illuminate if there is a fault with the anti-lock braking system.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white border border-[#F8F0CB] rounded-xl p-6">
+        <div class="flex items-start gap-3">
+          <span class="bg-[#E7CE50] text-[#453E18] font-bold text-sm px-2.5 py-1 rounded-lg flex-shrink-0">Q8</span>
+          <div>
+            <p class="font-semibold text-[#453E18] mb-2">Open the bonnet, identify where the brake fluid reservoir is and tell me how you would check that you have a safe level of hydraulic brake fluid.</p>
+            <p class="text-sm text-[#8B7C30]"><span class="font-semibold text-[#453E18]">Answer:</span> Identify the reservoir, check level is between the minimum and maximum markers.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#FDFBF1] border border-[#F8F0CB] rounded-xl p-6">
+        <div class="flex items-start gap-3">
+          <span class="bg-[#E7CE50] text-[#453E18] font-bold text-sm px-2.5 py-1 rounded-lg flex-shrink-0">Q9</span>
+          <div>
+            <p class="font-semibold text-[#453E18] mb-2">Show me how you would wash and clean the rear windscreen.</p>
+            <p class="text-sm text-[#8B7C30]"><span class="font-semibold text-[#453E18]">Answer:</span> Operate the rear wash/wipe control.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white border border-[#F8F0CB] rounded-xl p-6">
+        <div class="flex items-start gap-3">
+          <span class="bg-[#E7CE50] text-[#453E18] font-bold text-sm px-2.5 py-1 rounded-lg flex-shrink-0">Q10</span>
+          <div>
+            <p class="font-semibold text-[#453E18] mb-2">Show me how you would switch on the rear fog light(s) and explain when you would use them.</p>
+            <p class="text-sm text-[#8B7C30]"><span class="font-semibold text-[#453E18]">Answer:</span> Operate the control, explain use when visibility is seriously reduced — generally below 100 metres.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#FDFBF1] border border-[#F8F0CB] rounded-xl p-6">
+        <div class="flex items-start gap-3">
+          <span class="bg-[#E7CE50] text-[#453E18] font-bold text-sm px-2.5 py-1 rounded-lg flex-shrink-0">Q11</span>
+          <div>
+            <p class="font-semibold text-[#453E18] mb-2">Show me how you would demist the front windscreen.</p>
+            <p class="text-sm text-[#8B7C30]"><span class="font-semibold text-[#453E18]">Answer:</span> Set the controls including heated front windscreen if fitted, fan, air conditioning.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white border border-[#F8F0CB] rounded-xl p-6">
+        <div class="flex items-start gap-3">
+          <span class="bg-[#E7CE50] text-[#453E18] font-bold text-sm px-2.5 py-1 rounded-lg flex-shrink-0">Q12</span>
+          <div>
+            <p class="font-semibold text-[#453E18] mb-2">Show me how you would operate the horn.</p>
+            <p class="text-sm text-[#8B7C30]"><span class="font-semibold text-[#453E18]">Answer:</span> Whilst the vehicle is stationary, operate the horn control.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#FDFBF1] border border-[#F8F0CB] rounded-xl p-6">
+        <div class="flex items-start gap-3">
+          <span class="bg-[#E7CE50] text-[#453E18] font-bold text-sm px-2.5 py-1 rounded-lg flex-shrink-0">Q13</span>
+          <div>
+            <p class="font-semibold text-[#453E18] mb-2">Show me how you would check the parking brake for excessive wear.</p>
+            <p class="text-sm text-[#8B7C30]"><span class="font-semibold text-[#453E18]">Answer:</span> Apply the parking brake. If it is fully applied before reaching the top of the travel there is likely no excessive wear.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white border border-[#F8F0CB] rounded-xl p-6">
+        <div class="flex items-start gap-3">
+          <span class="bg-[#E7CE50] text-[#453E18] font-bold text-sm px-2.5 py-1 rounded-lg flex-shrink-0">Q14</span>
+          <div>
+            <p class="font-semibold text-[#453E18] mb-2">Show me how you would switch your headlight from dipped to main beam and explain how you would know the main beam is on while inside the vehicle.</p>
+            <p class="text-sm text-[#8B7C30]"><span class="font-semibold text-[#453E18]">Answer:</span> Operate the main beam control, identify the warning light indicator for main beam on the dashboard.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#FDFBF1] border border-[#F8F0CB] rounded-xl p-6">
+        <div class="flex items-start gap-3">
+          <span class="bg-[#E7CE50] text-[#453E18] font-bold text-sm px-2.5 py-1 rounded-lg flex-shrink-0">Q15</span>
+          <div>
+            <p class="font-semibold text-[#453E18] mb-2">Show me how you would check the direction indicators are working.</p>
+            <p class="text-sm text-[#8B7C30]"><span class="font-semibold text-[#453E18]">Answer:</span> Operate the indicator switch and walk round the vehicle to check all indicators flash — or use reflections in a wall or garage door.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white border border-[#F8F0CB] rounded-xl p-6">
+        <div class="flex items-start gap-3">
+          <span class="bg-[#E7CE50] text-[#453E18] font-bold text-sm px-2.5 py-1 rounded-lg flex-shrink-0">Q16</span>
+          <div>
+            <p class="font-semibold text-[#453E18] mb-2">Show me how you would check that the brake lights are working on this car.</p>
+            <p class="text-sm text-[#8B7C30]"><span class="font-semibold text-[#453E18]">Answer:</span> Operate the brake pedal, make use of reflections in garage doors, windows, or ask someone to watch at the back of the car.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#FDFBF1] border border-[#F8F0CB] rounded-xl p-6">
+        <div class="flex items-start gap-3">
+          <span class="bg-[#E7CE50] text-[#453E18] font-bold text-sm px-2.5 py-1 rounded-lg flex-shrink-0">Q17</span>
+          <div>
+            <p class="font-semibold text-[#453E18] mb-2">Show me how you would check that the power-assisted steering is working before starting a journey.</p>
+            <p class="text-sm text-[#8B7C30]"><span class="font-semibold text-[#453E18]">Answer:</span> If the steering becomes heavy the system may not be working properly. Before starting a journey, two simple checks can be made: gentlyand carefully feel for increased resistance as you turn the steering wheel or, if the steering wheel vibrates noticeably this may indicate a problem.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white border border-[#F8F0CB] rounded-xl p-6">
+        <div class="flex items-start gap-3">
+          <span class="bg-[#E7CE50] text-[#453E18] font-bold text-sm px-2.5 py-1 rounded-lg flex-shrink-0">Q18</span>
+          <div>
+            <p class="font-semibold text-[#453E18] mb-2">Tell me how you would check the tyres to ensure that they have sufficient tread depth and that their general condition is safe to use on the road.</p>
+            <p class="text-sm text-[#8B7C30]"><span class="font-semibold text-[#453E18]">Answer:</span> No cuts and bulges, 1.6mm of tread depth across the central three-quarters of the tyre and around the entire circumference. Use a tread depth indicator or the wear indicators in the tyre grooves.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-[#FDFBF1] border border-[#F8F0CB] rounded-xl p-6">
+        <div class="flex items-start gap-3">
+          <span class="bg-[#E7CE50] text-[#453E18] font-bold text-sm px-2.5 py-1 rounded-lg flex-shrink-0">Q19</span>
+          <div>
+            <p class="font-semibold text-[#453E18] mb-2">Tell me how you would know if there was a problem with your power steering.</p>
+            <p class="text-sm text-[#8B7C30]"><span class="font-semibold text-[#453E18]">Answer:</span> A warning light should illuminate if there is a problem with the power steering. You may also notice the steering feels heavier or different from usual.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-10 text-center">
+      <img src="/D1912/images/driving-lessons-glasgow2.png" alt="Driving lessons Glasgow" width="291" height="220" class="mx-auto rounded-xl shadow-lg max-w-sm w-full" loading="lazy" />
     </div>
   </div>
 </section>
 
-<!-- Footer -->
-<footer class="bg-[#423F33] text-white pt-12 pb-6">
-  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-    <div>
-      <div class="font-display font-extrabold text-lg text-[#E7CE50] mb-3">Accelerate Driving Tuition</div>
-      <p class="text-white/70 text-sm mb-3">Professional driving lessons across Glasgow and surrounding areas. Established 1998 by Steven Love, DSA qualified.</p>
-      <p class="text-white/70 text-sm">84 Aros Dr, Glasgow</p>
-      <a href="tel:07397040400" class="text-white/80 text-sm hover:text-white transition-colors">07397 040400</a>
-    </div>
-    <div>
-      <div class="font-display font-bold text-[#E7CE50] mb-3">Main Pages</div>
-      <ul class="space-y-2 text-sm text-white/70">
-        <li><a href="/D1912" class="hover:text-white transition-colors">Home</a></li>
-        <li><a href="/D1912/about-us" class="hover:text-white transition-colors">About Me</a></li>
-        <li><a href="/D1912/lessons-cost-glasgow" class="hover:text-white transition-colors">Lessons &amp; Cost</a></li>
-        <li><a href="/D1912/glasgow-areas" class="hover:text-white transition-colors">Areas</a></li>
-        <li><a href="/D1912/blog" class="hover:text-white transition-colors">Blog</a></li>
-        <li><a href="/D1912/contact-us" class="hover:text-white transition-colors">Contact</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="font-display font-bold text-[#E7CE50] mb-3">Areas</div>
-      <ul class="space-y-2 text-sm text-white/70">
-        <li><a href="/D1912/driving-lessons-glasgow" class="hover:text-white transition-colors">Glasgow</a></li>
-        <li><a href="/D1912/driving-lessons-glasgow-west-end" class="hover:text-white transition-colors">Glasgow West End</a></li>
-        <li><a href="/D1912/driving-lessons-glasgow-north" class="hover:text-white transition-colors">Glasgow North</a></li>
-        <li><a href="/D1912/driving-lessons-glasgow-east-end" class="hover:text-white transition-colors">Glasgow East End</a></li>
-        <li><a href="/D1912/driving-lessons-glasgow-southside" class="hover:text-white transition-colors">Glasgow South Side</a></li>
-        <li><a href="/D1912/driving-lessons-east-kilbride" class="hover:text-white transition-colors">East Kilbride</a></li>
-        <li><a href="/D1912/driving-lessons-hamilton" class="hover:text-white transition-colors">Hamilton</a></li>
-        <li><a href="/D1912/driving-lessons-paisley" class="hover:text-white transition-colors">Paisley</a></li>
-      </ul>
-    </div>
-    <div>
-      <div class="font-display font-bold text-[#E7CE50] mb-3">More</div>
-      <ul class="space-y-2 text-sm text-white/70">
-        <li><a href="/D1912/pass-plus-glasgow" class="hover:text-white transition-colors">Pass Plus</a></li>
-        <li><a href="/D1912/intensive-driving-courses" class="hover:text-white transition-colors">Intensive Courses</a></li>
-        <li><a href="/D1912/show-me-tell-me" class="hover:text-white transition-colors">Show Me / Tell Me</a></li>
-        <li><a href="/D1912/driving-instructor-jobs-glasgow" class="hover:text-white transition-colors">Instructor Jobs</a></li>
-        <li><a href="/D1912/thomas-cunningham" class="hover:text-white transition-colors">Thomas Cunningham</a></li>
-        <li><a href="/D1912/kirsty-stone" class="hover:text-white transition-colors">Kirsty Stone</a></li>
-      </ul>
+<!-- CTA -->
+<section class="py-14 bg-[#E7CE50]">
+  <div class="max-w-3xl mx-auto px-4 text-center">
+    <h2 class="text-2xl font-bold text-[#453E18] mb-4">Ready to Book Your Test?</h2>
+    <p class="text-[#453E18] mb-6">We will help you prepare for every part of your practical driving test, including Show Me / Tell Me questions.</p>
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="tel:07397040400" class="inline-flex items-center gap-2 bg-[#453E18] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#342F12] transition-colors">📞 07397 040400</a>
+      <a href="/D1912/contact-us" class="inline-flex items-center gap-2 bg-white text-[#453E18] font-bold px-6 py-3 rounded-lg hover:bg-[#FDFBF1] transition-colors">Book a Lesson</a>
     </div>
   </div>
-  <div class="border-t border-white/10 pt-6 text-center text-white/40 text-xs">
-    &copy; 2024 Accelerate Driving Tuition. Site by <a href="https://biscuitweb.co.uk" class="hover:text-white/60 transition-colors">Biscuit Web</a>.
+</section>
+
+<footer class="bg-[#423F33] text-[#F8F0CB]">
+  <div class="max-w-6xl mx-auto px-4 py-12">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-8 mb-10">
+      <div class="lg:col-span-1">
+        <img src="/D1912/images/logo-accelerate-s.png" alt="Accelerate Driving Tuition" width="180" height="60" class="h-10 w-auto mb-4 brightness-0 invert opacity-80" loading="lazy" />
+        <p class="text-sm text-[#F8F0CB]/70 mb-3">84 Aros Dr, Glasgow</p>
+        <a href="tel:07397040400" class="text-[#E7CE50] font-semibold hover:underline">07397 040400</a>
+        <p class="text-xs text-[#F8F0CB]/50 mt-4">Established 1998</p>
+      </div>
+      <div>
+        <h4 class="font-bold text-[#E7CE50] mb-3 text-sm uppercase tracking-wider">Main</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/D1912" class="text-[#F8F0CB]/80 hover:text-[#E7CE50]">Home</a></li>
+          <li><a href="/D1912/about-us" class="text-[#F8F0CB]/80 hover:text-[#E7CE50]">About Me</a></li>
+          <li><a href="/D1912/lessons-cost-glasgow" class="text-[#F8F0CB]/80 hover:text-[#E7CE50]">Lessons &amp; Cost</a></li>
+          <li><a href="/D1912/contact-us" class="text-[#F8F0CB]/80 hover:text-[#E7CE50]">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-[#E7CE50] mb-3 text-sm uppercase tracking-wider">Lessons</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/D1912/pass-plus-glasgow" class="text-[#F8F0CB]/80 hover:text-[#E7CE50]">Pass Plus</a></li>
+          <li><a href="/D1912/intensive-driving-courses" class="text-[#F8F0CB]/80 hover:text-[#E7CE50]">Intensive Courses</a></li>
+          <li><a href="/D1912/show-me-tell-me" class="text-[#F8F0CB]/80 hover:text-[#E7CE50]">Show Me/Tell Me</a></li>
+          <li><a href="/D1912/driving-instructor-jobs-glasgow" class="text-[#F8F0CB]/80 hover:text-[#E7CE50]">Instructor Jobs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-[#E7CE50] mb-3 text-sm uppercase tracking-wider">Areas</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/D1912/driving-lessons-glasgow" class="text-[#F8F0CB]/80 hover:text-[#E7CE50]">Glasgow</a></li>
+          <li><a href="/D1912/driving-lessons-east-kilbride" class="text-[#F8F0CB]/80 hover:text-[#E7CE50]">East Kilbride</a></li>
+          <li><a href="/D1912/driving-lessons-hamilton" class="text-[#F8F0CB]/80 hover:text-[#E7CE50]">Hamilton</a></li>
+          <li><a href="/D1912/driving-lessons-paisley" class="text-[#F8F0CB]/80 hover:text-[#E7CE50]">Paisley</a></li>
+          <li><a href="/D1912/driving-lessons-glasgow-north" class="text-[#F8F0CB]/80 hover:text-[#E7CE50]">Glasgow North</a></li>
+          <li><a href="/D1912/driving-lessons-glasgow-southside" class="text-[#F8F0CB]/80 hover:text-[#E7CE50]">Glasgow South Side</a></li>
+          <li><a href="/D1912/driving-lessons-glasgow-east-end" class="text-[#F8F0CB]/80 hover:text-[#E7CE50]">Glasgow East End</a></li>
+          <li><a href="/D1912/driving-lessons-glasgow-west-end" class="text-[#F8F0CB]/80 hover:text-[#E7CE50]">Glasgow West End</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-[#E7CE50] mb-3 text-sm uppercase tracking-wider">Passes</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/D1912/thomas-cunningham" class="text-[#F8F0CB]/80 hover:text-[#E7CE50]">Thomas Cunningham</a></li>
+          <li><a href="/D1912/kirsty-stone" class="text-[#F8F0CB]/80 hover:text-[#E7CE50]">Kirsty Stone</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-[#F8F0CB]/10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-[#F8F0CB]/50">&copy; 2024 Accelerate Driving Tuition. All rights reserved. 84 Aros Dr, Glasgow.</p>
+      <img src="/D1912/images/logos-acc.png" alt="Accreditation logos" width="200" height="43" class="h-8 w-auto opacity-60 brightness-0 invert" loading="lazy" />
+    </div>
   </div>
 </footer>
 
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+</script>
 </body>
 </html>
